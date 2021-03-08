@@ -1,0 +1,33 @@
+spring:
+  cache:
+    type: none
+  main:
+    lazy-initialization: true
+  jpa:
+    properties:
+      org.hibernate.flushMode: ALWAYS
+wait:
+  explicit:
+    seconds: 10
+  implicit:
+    milliseconds: 300
+report:
+  baseDir: target/reports
+  allure: ${report.baseDir}/allure-report
+  extent:
+    dir: ${report.baseDir}/extent
+    file: ${report.extent.dir}/ExtentReport.html
+  screenshots: ${report.baseDir}/screenshots
+webDriver:
+  mode: browserStack
+  browser: Chrome
+  browserStack:
+    local: true
+    os: Windows
+    osVersion: 10
+    browserVersion: 87
+    domain: hub-cloud.browserstack.com/wd/hub
+    username: konstantinasfalk1
+    key: kstpgJszp762zsP9xYkP
+url:
+  ui-url: https://zyro.com

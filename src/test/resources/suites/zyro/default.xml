@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Zyro.com regression test suite" verbose="2" parallel="tests" thread-count="1">
+    <test name="Regression test for Zyro.com login page">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name = "com.zyro.tests.login.LoginTest"/>
+        </packages>
+    </test>
+</suite>
